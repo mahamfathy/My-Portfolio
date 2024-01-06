@@ -13,8 +13,7 @@ import { Project } from '../shared/models/Project';
   styleUrl: './home.component.css',
 })
 export class HomeComponent implements OnInit {
-  imageUrl = 'https://mahamfathy.github.io/assets/avatar.jpg';
-  imageTitle = 'Profile Picture';
+  imageTitle = 'Avatar';
   imageStyle: any = {
     width: '220px',
     height: '220px',
