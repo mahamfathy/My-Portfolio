@@ -13,7 +13,7 @@ import { Project } from '../shared/models/Project';
   styleUrl: './home.component.css',
 })
 export class HomeComponent implements OnInit {
-  imageUrl = 'assets/avatar.jpg';
+  imageUrl = './../assets/avatar.jpg';
   imageTitle = 'Profile Picture';
   imageStyle: any = {
     width: '220px',
