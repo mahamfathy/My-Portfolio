@@ -1,0 +1,18 @@
+::ng-deep  .custom-btn{ 
+    width: fit-content !important;
+    border-radius: 50px !important;
+}
+@media( max-width:375px) {
+  
+.p-dialog .p-dialog-content {
+   
+    padding:0;
+}
+.shadow-2{
+
+    width: 217px !important;
+    height: 190px;
+}
+
+}
+

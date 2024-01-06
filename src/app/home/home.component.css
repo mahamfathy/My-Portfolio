@@ -1,0 +1,8 @@
+.text-center > h2{
+    margin-top: 10px;
+}
+.col-lg{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+}

@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img
+          [src]="imageUrl"
+          [alt]="imageTitle"
+          class="rounded-circle"
+          [ngStyle]="imageStyle"
+        />
+        <p>
+          Passionate and detail-oriented junior web developer with a diverse
+          background in accounting and various fields. Embarking on a dynamic
+          journey in web development, I bring a proven track record of an
+          analytical mindset, problem-solving skills, and dedication to
+          excellence. Proficient in HTML, CSS, and JavaScript, with hands-on
+          experience in building robust web applications using the Angular
+          framework. Committed to continuous learning and staying abreast of
+          industry trends, I am excited to contribute my unique blend of
+          financial acumen and technical proficiency to create intuitive and
+          visually appealing user experiences. Eager to connect and explore how
+          my diverse background can bring a fresh perspective to your
+          development team.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Featured Projects</h2>
+        <h4>{{ featureProject.name }}</h4>
+      </div>
+
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          @for (item of featureProject.pictures; track $index) {
+          <div class="carousel-item active">
+            <img [src]="item" class="w-100 d-block" alt="First slide" />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          }
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p class="mt-2">{{ featureProject.summary }}</p>
+      <p>Visit the Portofolio section to learn more!</p>
+    </div>
+  </div>
+</div>
