@@ -13,12 +13,16 @@ export class ResumeComponent{
   constructor(private titleService: Title) {
     this.titleService.setTitle('Maha Fathy - Resume');
   }
-   download(fileContent: string) {
-    const a = document.createElement("a");
+   download() {
+    const fileContent = 'your-pdf-content';
+    
+    const a = document.createElement('a');
 
-    a.style.display = "none";
+    a.classList.add('btn', 'btn-primary'); // Bootstrap button styling
+    a.style.display = 'none';
     a.href = `data:application/pdf;base64,${fileContent}`;
-    a.download = "Maha Fathy (Front-end-developer).pdf";
+    a.download = 'Maha Fathy (Front-end-developer).pdf';
+
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
