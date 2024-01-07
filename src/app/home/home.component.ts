@@ -14,7 +14,7 @@ import { Project } from '../shared/models/Project';
 })
 export class HomeComponent implements OnInit {
   imageTitle = 'Avatar';
- imageUrl = 'assets/pic.png'
+ imageUrl = 'https://www.pngarts.com/files/10/Default-Profile-Picture-PNG-Image.png'
 
   imageStyle: any = {
     width: '220px',
