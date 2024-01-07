@@ -1,16 +1,21 @@
 <div class="container text-center">
-  <button (click)="DownloadFile()" class="btn btn-primary mb-1 shadow border">
-    Download PDF Resume
-  </button>
+  <!-- <button (click)="DownloadFile()" class="btn btn-primary mb-1 shadow border"> -->
+    <a 
+    href="../../assets/Maha Fathy (Front-end-developer).pdf"
+   class="btn"
+   target="_blank"
+   download="Maha Fathy Resume.csv"
+   >
+   Download Now
+   </a>
 </div>
 <div class="container text-center">
-        
   <div class="row text-center">
     <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button
-            class="accordion-button collapsed  rounded bg-primary"
+            class="accordion-button collapsed rounded bg-primary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne"
@@ -36,7 +41,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
           <button
-            class="accordion-button collapsed  rounded bg-primary"
+            class="accordion-button collapsed rounded bg-primary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseTwo"
@@ -113,8 +118,8 @@
             demonstrate the <code>.accordion-flush</code> class. This is the
             first item's accordion body.
           </div>
+        </div>
       </div>
     </div>
-</div>
-
+  </div>
 </div>
