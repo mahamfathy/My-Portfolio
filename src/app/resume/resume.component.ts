@@ -1,11 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [],
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css'],
 })
@@ -14,18 +12,7 @@ export class ResumeComponent{
     this.titleService.setTitle('Maha Fathy - Resume');
   }
    download() {
-    const fileContent = 'your-pdf-content';
-    
-    const a = document.createElement('a');
-
-    a.classList.add('btn', 'btn-primary'); // Bootstrap button styling
-    a.style.display = 'none';
-    a.href = `data:application/pdf;base64,${fileContent}`;
-    a.download = 'Maha Fathy (Front-end-developer).pdf';
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+ 
 }
   };
 
