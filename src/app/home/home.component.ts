@@ -14,7 +14,7 @@ import { Project } from '../shared/models/Project';
 })
 export class HomeComponent implements OnInit {
   imageTitle = 'Avatar';
- imageUrl = 'https://mahamfathy.github.io/assets/' + this.imageTitle.toLowerCase() + '.jpg'
+ imageUrl = 'src/assets/avatar.jpg'
 
   imageStyle: any = {
     width: '220px',
