@@ -16,6 +16,6 @@ linkedInLink= 'https://www.linkedin.com/in/maha-fathy-40801b1b5/'
     this.titleService.setTitle('Maha Fathy - Contact');
   }
   imageStyle = { width: '32px', height: '32px' };
-  emailAddress: string = 'mahafathyh@gmail.com';
+  emailAddress: string = 'mailto:mahafathyh@gmail.com';
 
 }
