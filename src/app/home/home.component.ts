@@ -14,7 +14,7 @@ import { Project } from '../shared/models/Project';
 })
 export class HomeComponent implements OnInit {
   imageTitle = 'Avatar';
- imageUrl = '../assets/avatar.JPG'
+ imageUrl = './assets/avatar.jpg'
 
   imageStyle: any = {
     width: '220px',
